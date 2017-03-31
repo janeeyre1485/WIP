@@ -6,12 +6,16 @@ import org.hibernate.Criteria;
 
 public class AbstractDao<PK extends Serializable, T> {
 
-	public void persist(T entity){
-		
+	public void persist(T entity) {
+
 	}
-	
-	 protected Criteria createEntityCriteria(){
-	        return null;
-	    }
-	 
+
+	protected Criteria createEntityCriteria() {
+		return null;
+	}
+
+	public void delete(T entity) {
+
+	}
+
 }
